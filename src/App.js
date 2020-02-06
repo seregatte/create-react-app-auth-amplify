@@ -6,6 +6,21 @@ import Amplify, { Auth } from 'aws-amplify';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 
+const signUpConfig = {
+  header: 'My Customized Sign Up',
+  hideAllDefaults: true,
+  defaultCountryCode: '55',
+  signUpFields: [
+    {
+      label: 'My custom email label',
+      key: 'email',
+      required: true,
+      displayOrder: 1,
+      type: 'string'
+    }
+  ]
+};
+
 class App extends Component {
   render() {
     return (
@@ -29,4 +44,4 @@ class App extends Component {
   }
 }
 
-export default withAuthenticator(App, true);
+export default withAuthenticator(App, { signUpConfig });
