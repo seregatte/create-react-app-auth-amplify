@@ -9,16 +9,7 @@ Amplify.configure(aws_exports);
 const signUpConfig = {
   header: 'My Customized Sign Up',
   hideAllDefaults: true,
-  defaultCountryCode: '55',
-  signUpFields: [
-    {
-      label: 'My custom email label',
-      key: 'email',
-      required: true,
-      displayOrder: 1,
-      type: 'string'
-    }
-  ]
+  defaultCountryCode: '55'
 };
 
 class App extends Component {
