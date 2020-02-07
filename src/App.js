@@ -35,4 +35,4 @@ class App extends Component {
   }
 }
 
-export default withAuthenticator(App, { signUpConfig });
+export default withAuthenticator(App, true);
