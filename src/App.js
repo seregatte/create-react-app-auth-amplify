@@ -8,7 +8,7 @@ Amplify.configure(aws_exports);
 
 const signUpConfig = {
   includeGreetings: true,
-  header: 'Cadastro',
+  header: 'Cadastro 2',
   defaultCountryCode: '55'
 };
 
